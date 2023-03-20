@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pigeons Game</title>
+    <link href="style.css" rel="stylesheet" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <main>
+      <p class="game-desc">The one who gets 20 points first will win.</p>
+      <p class="game-desc">
+        playing '1' makes you lose your score and switch with the other player.
+      </p>
+      <div class="grid-container-2">
+        <section class="player player--0 active-player-style">
+          <p class="name">PLAYER 1</p>
+          <p class="score score--0">0</p>
+          <div class="current-div">
+            <p class="current-label">CURRENT</p>
+            <p class="current current--0">0</p>
+          </div>
+        </section>
+        <section class="player player--1">
+          <p class="name">PLAYER 2</p>
+          <p class="score score--1">0</p>
+
+          <div class="current-div">
+            <p class="current-label">CURRENT</p>
+            <p class="current current--1">0</p>
+          </div>
+        </section>
+        <button class="btn btn--new" title="new game">🔚NEW GAME</button>
+        <img src="dice-3.png" class="dice-img" alt="Dice img" />
+        <button class="btn btn--roll" title="roll the dice">🎲ROLL DICE</button>
+        <button class="btn btn--hold" title="hold your current score">
+          📥HOLD
+        </button>
+      </div>
+    </main>
+  </body>
+</html>

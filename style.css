@@ -1,0 +1,287 @@
+/* Note */
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  /* Note */
+  font-family: 'Nunito', sans-serif;
+  color: #333;
+  font-weight: 400;
+  /*  */
+  background: #b92e39; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #b92e39, #7c357a);
+  background: linear-gradient(to right, #b92e39, #7c357a);
+}
+main {
+  height: 100vh;
+  text-align: center;
+  /* Note */
+  overflow: hidden;
+}
+.game-desc:first-child {
+  margin-top: 2rem;
+}
+.game-desc {
+  font-size: 1.6rem;
+  color: #fbfbfb;
+}
+.grid-container-2 {
+  position: relative;
+  width: 70%;
+  height: 80vh;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  border-radius: 1.2rem;
+  margin: 4.8rem auto;
+  box-shadow: 0 3.2rem 3.2rem 0 rgba(0, 0, 0, 0.3);
+  z-index: 99;
+
+  /* border: 3px solid black; */
+  /* background-color: rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(200px);
+  filter: blur(); */
+}
+/* .grid-container-2 section {
+ 
+} */
+.player {
+  width: 100%;
+  text-align: center;
+  background-color: #bb7995;
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+  align-items: center;
+  padding: 9.6rem 0 9.6rem 0;
+
+  /* Note */
+  transition: all 0.75s;
+}
+.player:first-child {
+  border-top-left-radius: 1.2rem;
+  border-bottom-left-radius: 1.2rem;
+}
+.player:nth-child(2) {
+  border-bottom-right-radius: 1.2rem;
+  border-top-right-radius: 1.2rem;
+}
+.name {
+  font-size: 4rem;
+  /* Note */
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  font-weight: 300;
+  /*  */
+}
+.score {
+  color: #c7365f;
+  font-size: 8rem;
+  /* Note */
+  font-weight: 300;
+}
+.active-player-style {
+  background-color: #daafbd;
+}
+.active-player-style .name {
+  /* Note first child is the name */
+  font-weight: 700;
+}
+/* Note */
+.player--active .score {
+  font-weight: 400;
+}
+.active-player-style .current-div {
+  /* background-color: #c7365f; */
+  /* color: #e7dfe2; */
+  /* Note */
+  opacity: 1;
+}
+.player-winner {
+  background-color: #2f2f2f;
+}
+.player-winner .name {
+  color: #c7365f;
+}
+.current-div {
+  /* background-color: #c3436b; */
+  /* color: #d0cbcd; */
+  background-color: #c7365f;
+  font-size: 1.6rem;
+  /* Note */
+  color: #fff;
+  opacity: 0.8;
+  transition: all 0.75s;
+  /* .... */
+  border-radius: 0.8rem;
+  width: max-content;
+  padding: 2rem 6rem;
+  margin-top: auto;
+}
+.current-label {
+  /* Note */
+  text-transform: uppercase;
+  font-size: 1.7rem;
+  color: #d0cbcd;
+}
+/* current score */
+.current {
+  font-size: 3.6rem;
+  margin-top: 1.2rem;
+}
+.btn {
+  background-color: white;
+  background-color: #ffffff99;
+  cursor: pointer;
+  border: none;
+  font-size: 1.8rem;
+  padding: 0.8rem 2.5rem;
+  border-radius: 3.2rem;
+  /* Note */
+  color: #444;
+  font-family: inherit;
+  font-weight: 400;
+  backdrop-filter: blur(10px);
+  text-transform: uppercase;
+  box-shadow: 0 1.75rem 3.5rem rgba(0, 0, 0, 0.1);
+  /*  */
+  display: flex;
+  align-items: center;
+  transition: all 0.2s;
+  /*  */
+}
+/* Note */
+.btn::first-letter {
+  font-size: 2.4rem;
+  display: inline-block;
+  margin-right: 0.7rem;
+}
+.btn:active {
+  transform: translate(-50%, 3px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+}
+.btn:focus {
+  outline: none;
+}
+/*  */
+.dice-img,
+.btn {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.btn--new {
+  top: 3.2rem;
+}
+.dice-img {
+  position: absolute;
+  top: 35%;
+  transform: translate(-50%, -50%);
+  /* Note */
+  width: 10rem;
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2);
+}
+.hidden {
+  display: none;
+}
+.btn--roll {
+  bottom: 17rem;
+  /* transform: translate(-50%, -60%); */
+}
+.btn--hold {
+  bottom: 9.6rem;
+}
+
+/* ..................Queries........................... */
+/* Below 1104 */
+@media (max-width: 69em) {
+  html {
+    font-size: 56.25%;
+  }
+  .game-desc {
+    font-size: 1.8rem;
+  }
+  .grid-container-2 {
+    width: 80%;
+  }
+}
+
+/* Below 912 */
+@media (max-width: 57em) {
+  .grid-container-2 {
+    width: 90%;
+  }
+}
+
+/* Below ~850 */
+@media (max-width: 54em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+/* Below 704 */
+@media (max-width: 44em) {
+  .grid-container-2 {
+    width: 100%;
+  }
+}
+
+/* Below 624 */
+@media (max-width: 39em) {
+  .btn {
+    padding: 0.6rem 1.2rem;
+    border-radius: 2.4rem;
+  }
+  .btn--roll {
+    bottom: 6.2rem;
+  }
+  .btn--hold {
+    bottom: 1.6rem;
+  }
+  .grid-container-2 {
+    height: initial;
+  }
+}
+
+/* Below 560 */
+@media (max-width: 35em) {
+  .current-div {
+    padding: 1rem 4rem;
+  }
+  .dice-img {
+    width: 8rem;
+  }
+}
+/* Below 480 */
+@media (max-width: 30em) {
+  .game-desc {
+    font-size: 1.6rem;
+  }
+  .current-div {
+    padding: 0.6rem 2rem;
+  }
+  .current-label {
+    font-size: 1.6rem;
+  }
+  .current {
+    font-size: 2.4rem;
+    margin-top: 1rem;
+  }
+  .dice-img {
+    top: 40%;
+    width: 7rem;
+  }
+  .btn {
+    font-size: 1.6rem;
+  }
+}
