@@ -6,11 +6,12 @@ Implementing a simple web game with (HTML, CSS, Js):
 - The player who gets 20 points first will win
 
 # Objectives:
-1) Using responsive and animative design for more fun.
+1) Using adaptive and animative design for more fun.
 2) Implement Rolling the Dice functionality
-3) Implement Switching the Active Player functionality
-4) Implement Holding Current Score functionality
-5) Implement Resetting the Game functionality
+3) Switching the Active Player.
+4) Holding Current Score.
+5) Resetting the Game.
 
-# Flow chart
+# Flow chart![pig-game-flowchart](https://user-images.githubusercontent.com/75391814/226435430-33e9d634-2b91-44e2-a30f-719cb47a9f72.png)
+
 
