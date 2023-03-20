@@ -1,7 +1,7 @@
 # Pigeons_Game
-#### Video Demo:  <URL HERE>](https://nahla-mustafa99.github.io/Pigeons_Game/)
+#### Video Demo:  https://nahla-mustafa99.github.io/Pigeons_Game/
 #### Description:
-Implementing a simple web game with (HTML, CSS, Js):
+Implementing a simple web game with (HTML, CSS, Js)
 - That game starts with player1 by default.
 - The player can roll the dice multiple times and hold his current score in his total score before he gets 1.
 - If a player gets 1 will lose his current score and then the other player to take his turn.
